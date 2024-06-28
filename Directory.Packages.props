@@ -28,7 +28,7 @@
     <PackageVersion Include="Uno.CommunityToolkit.WinUI.UI.Controls.DataGrid" Version="7.1.200" />
     <PackageVersion Include="Uno.Core.Extensions.Compatibility" Version="4.0.1" />
     <PackageVersion Include="Uno.Core.Extensions.Disposables" Version="4.0.1" />
-    <PackageVersion Include="Uno.Core.Extensions.Logging.Singleton" Version="4.0.1" />
+    <PackageVersion Include="Uno.Core.Extensions.Logging.Singleton" Version="4.1.1" />
     <PackageVersion Include="Uno.Cupertino.WinUI" Version="4.2.0-dev.18" />
     <PackageVersion Include="Uno.Diagnostics.Eventing" Version="2.1.0-dev.1" />
     <PackageVersion Include="Uno.Extensions.Logging.OSLog" Version="1.6.0-dev.2" />
