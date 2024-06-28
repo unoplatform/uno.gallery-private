@@ -13,6 +13,6 @@ namespace Uno.Gallery.Wasm
 
 			[JSImport($"{JsType}.setCurrentLocationHref")]
 			internal static partial string SetCurrentLocationHref(string locationHref);
-		}
+		}	
 	}
 }

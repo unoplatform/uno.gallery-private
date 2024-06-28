@@ -8,13 +8,13 @@ namespace Uno.Gallery.Wasm
 		{
 			get
 			{
-				return NativeMethods.GetCurrentFragment();
+				return ""; // NativeMethods.GetCurrentFragment();
 			}
 
 			set
 			{
-				var escaped = WebAssemblyRuntime.EscapeJs(value);
-				NativeMethods.SetCurrentFragment(escaped);
+				//var escaped = WebAssemblyRuntime.EscapeJs(value);
+				//NativeMethods.SetCurrentFragment(escaped);
 			}
 		}
 	}
