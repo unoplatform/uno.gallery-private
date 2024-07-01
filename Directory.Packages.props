@@ -33,7 +33,7 @@
     <PackageVersion Include="Uno.Diagnostics.Eventing" Version="2.1.0-dev.1" />
     <PackageVersion Include="Uno.Extensions.Logging.OSLog" Version="1.6.0-dev.2" />
     <PackageVersion Include="Uno.Extensions.Logging.WebAssembly.Console" Version="1.6.0-dev.2" />
-    <PackageVersion Include="Uno.Fonts.Fluent" Version="2.3.0" />
+    <PackageVersion Include="Uno.Fonts.Fluent" Version="2.3.1" />
     <PackageVersion Include="Uno.Material.WinUI" Version="4.2.0-dev.18" />
     <PackageVersion Include="Uno.ShowMeTheXAML" Version="2.0.0-dev0015" />
     <PackageVersion Include="Uno.ShowMeTheXAML.MSBuild" Version="2.0.0-dev0015" />
@@ -46,9 +46,9 @@
     <PackageVersion Include="Uno.UniversalImageLoader" Version="1.9.36" />
     <PackageVersion Include="Uno.Wasm.Bootstrap" Version="9.0.0-dev.35" />
     <PackageVersion Include="Uno.Wasm.Bootstrap.DevServer" Version="9.0.0-dev.35" />
-    <PackageVersion Include="Uno.WinUI" Version="5.1.80" />
+    <PackageVersion Include="Uno.WinUI" Version="5.3.52" />
     <PackageVersion Include="Uno.WinUI.Lottie" Version="5.1.80" />
-    <PackageVersion Include="Uno.WinUI.MediaPlayer.Skia.Gtk" Version="5.1.80" />
+    <PackageVersion Include="Uno.WinUI.MediaPlayer.Skia.Gtk" Version="5.3.52" />
     <PackageVersion Include="Uno.WinUI.MediaPlayer.WebAssembly" Version="5.1.80" />
     <PackageVersion Include="Uno.WinUI.RemoteControl" Version="5.1.80" />
     <PackageVersion Include="Uno.WinUI.Skia.Gtk" Version="5.1.80" />
