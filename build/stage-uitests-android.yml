@@ -16,6 +16,13 @@
   - template: templates/dotnet-install-mac.yml
   - template: templates/canary-updater.yml
 
+  - task: PowerShell@2
+    displayName: 'Install coreutils'
+    inputs:
+      targetType: inline
+      script: |
+        brew install coreutils
+
   - bash: |
       chmod +x $(build.sourcesdirectory)/build/scripts/android-uitest-run.sh
       $(build.sourcesdirectory)/build/scripts/android-uitest-run.sh
