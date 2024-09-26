@@ -69,6 +69,7 @@ then
 		-no-snapshot \
 		-noaudio \
 		-no-boot-anim \
+		-prop ro.debuggable=1 \
 		> /dev/null 2>&1 &
 
 	# Wait for the emulator to finish booting
