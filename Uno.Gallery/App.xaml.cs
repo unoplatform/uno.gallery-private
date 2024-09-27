@@ -143,7 +143,7 @@ namespace Uno.Gallery
 		}
 #endif
 
-		public void ShellNavigateTo(Sample sample) => ShellNavigateTo(sample, trySynchronizeCurrentItem: true);
+		public void ShellNavigateTo(Sample sample) => ShellNavigateTo(sample, trySynchronizeCurrentItem: false);
 
 		private void ShellNavigateTo<TPage>(bool trySynchronizeCurrentItem = true) where TPage : Page
 		{
@@ -300,8 +300,8 @@ namespace Uno.Gallery
 			{
 				SamplePageLayout.SetPreferredDesign(design);
 			}
-
-			ShellNavigateTo<OverviewPage>();
+			Console.WriteLine("GALLERYCANARY: in Backdoor");
+			ShellNavigateTo<OverviewPage>(trySynchronizeCurrentItem: false);
 			ShellNavigateTo(sample);
 		}
 
