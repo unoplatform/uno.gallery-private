@@ -13,7 +13,7 @@ export UNO_UITEST_ANDROID_PROJECT=$BUILD_SOURCESDIRECTORY/Uno.Gallery
 export UNO_UITEST_BINARY=$BUILD_SOURCESDIRECTORY/Uno.Gallery.UITests/bin/Release/net47/Uno.Gallery.UITests.dll
 export UNO_EMULATOR_INSTALLED=$BUILD_SOURCESDIRECTORY/build/.emulator_started
 export UITEST_TEST_TIMEOUT=60m
-export ANDROID_SIMULATOR_APILEVEL=34
+export ANDROID_SIMULATOR_APILEVEL=28
 # Override Android SDK tooling
 export ANDROID_HOME=$BUILD_SOURCESDIRECTORY/build/android-sdk
 export ANDROID_SDK_ROOT=$BUILD_SOURCESDIRECTORY/build/android-sdk
@@ -31,7 +31,7 @@ then
 fi
 
 AVD_NAME=xamarin_android_emulator
-AVD_CONFIG_FILE=~/.android/avd/$AVD_NAME.avd/config.ini
+AVD_CONFIG_FILE=~/.android/avd/$AVD_NAME.ini
 
 # Install Android SDK emulators and SDKs
 if [ ! -f "$UNO_EMULATOR_INSTALLED" ];
@@ -50,7 +50,7 @@ then
 
 	# based on https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#hardware
 	# >> Agents that run macOS images are provisioned on Mac pros with a 3 core CPU, 14 GB of RAM, and 14 GB of SSD disk space.
-	#echo "hw.cpu.ncore=3" >> $AVD_CONFIG_FILE
+	echo "hw.cpu.ncore=3" >> $AVD_CONFIG_FILE
 
 	# Bump the heap size as the tests are stressing the application
 	echo "vm.heapSize=256M" >> $AVD_CONFIG_FILE
