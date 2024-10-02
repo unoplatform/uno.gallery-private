@@ -31,7 +31,7 @@ then
 fi
 
 AVD_NAME=xamarin_android_emulator
-AVD_CONFIG_FILE=~/.android/avd/$AVD_NAME.ini
+AVD_CONFIG_FILE=~/.android/avd/$AVD_NAME.avd/config.ini
 
 # Install Android SDK emulators and SDKs
 if [ ! -f "$UNO_EMULATOR_INSTALLED" ];
@@ -65,6 +65,13 @@ then
 	echo "vm.heapSize=256M" >> $AVD_CONFIG_FILE
 
 	echo $ANDROID_HOME/emulator/emulator -list-avds
+
+	cat $AVD_CONFIG_FILE
+	if [ ! -f "~/.android/avd/$AVD_NAME.ini" ];
+	then
+		echo "found avd .ini file"
+		cat ~/.android/avd/$AVD_NAME.ini
+	fi
 
 	echo "Starting emulator"
 
