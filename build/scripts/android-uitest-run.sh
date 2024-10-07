@@ -64,14 +64,7 @@ then
 	# Bump the heap size as the tests are stressing the application
 	echo "vm.heapSize=256M" >> $AVD_CONFIG_FILE
 
-	echo $ANDROID_HOME/emulator/emulator -list-avds
-
-	cat $AVD_CONFIG_FILE
-	if [ ! -f "~/.android/avd/$AVD_NAME.ini" ];
-	then
-		echo "found avd .ini file"
-		cat ~/.android/avd/$AVD_NAME.ini
-	fi
+	$ANDROID_HOME/emulator/emulator -list-avds
 
 	echo "Starting emulator"
 
